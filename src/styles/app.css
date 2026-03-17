@@ -3,7 +3,17 @@
 :root {
   --color-bg: oklch(1 0 0);
   --color-fg: oklch(0.15 0 0);
+
   --color-primary: oklch(0.5595 0.1727 40.82);
+  --color-primary-foreground: oklch(1 0 0);
+  --color-primary-hover: oklch(0.7595 0.1727 40.82);
+  --color-primary-active: oklch(0.4595 0.1727 40.82);
+
+  --color-secondary: oklch(1 0 0);
+  --color-secondary-foreground: oklch(1 0 0);
+  --color-secondary-hover: oklch(1 0 0);
+  --color-secondary-active: oklch(1 0 0);
+
   --color-border: oklch(0.85 0 0);
   --color-muted: oklch(0.92 0 0);
   --radius: 0.375rem;
@@ -14,7 +24,17 @@
 .dark {
   --color-bg: oklch(0.14 0 0);
   --color-fg: oklch(0.98 0 0);
+
   --color-primary: oklch(0.5595 0.1727 40.82);
+  --color-primary-foreground: oklch(0.14 0 0);
+  --color-primary-hover: oklch(0.7595 0.1727 40.82);
+  --color-primary-active: oklch(0.4595 0.1727 40.82);
+
+  --color-secondary: oklch(0.14 0 0);
+  --color-secondary-foreground: oklch(0.98 0 0);
+  --color-secondary-hover: oklch(0.14 0 0);
+  --color-secondary-active: oklch(0.14 0 0);
+
   --color-border: oklch(0.28 0 0);
   --color-muted: oklch(0.22 0 0);
 }
@@ -22,7 +42,17 @@
 @theme inline {
   --color-background: var(--color-bg);
   --color-foreground: var(--color-fg);
+
   --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-primary-active: var(--color-primary-active);
+
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: var(--color-secondary-foreground);
+  --color-secondary-hover: var(--color-secondary-hover);
+  --color-secondary-active: var(--color-secondary-active);
+
   --color-border: var(--color-border);
   --color-muted: var(--color-muted);
   --radius: var(--radius);
@@ -38,7 +68,7 @@
   }
 
   * {
-    border-color: var(--color-border);
+    @apply border-border;
   }
 
   /*noinspection ALL*/
